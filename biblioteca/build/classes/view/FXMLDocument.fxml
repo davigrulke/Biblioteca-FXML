@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.FXMLDocumentController">
+   <children>
+      <TableView fx:id="tbListaLivro" layoutX="21.0" layoutY="22.0" prefHeight="293.0" prefWidth="457.0">
+        <columns>
+          <TableColumn fx:id="clIdLivro" prefWidth="46.0" text="ID" />
+          <TableColumn fx:id="clTituloLivro" prefWidth="126.0" text="Título" />
+            <TableColumn fx:id="clAnoLancamento" prefWidth="53.0" text="Ano" />
+            <TableColumn fx:id="clNumeroPaginas" prefWidth="75.0" text="Pag" />
+            <TableColumn fx:id="clIdioma" prefWidth="75.0" text="Idioma" />
+            <TableColumn fx:id="clPais" prefWidth="75.0" text="Pais" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNovo" layoutX="30.0" layoutY="348.0" mnemonicParsing="false" onMouseClicked="#cliqueBotaoNovo" prefHeight="45.0" prefWidth="114.0" text="Novo" />
+      <Button fx:id="btnAlterar" layoutX="161.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#cliqueBotaoEditar" prefHeight="45.0" prefWidth="114.0" text="Editar" />
+      <Button fx:id="btnDeletar" layoutX="292.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#cliqueBotaoDeletar" prefHeight="45.0" prefWidth="114.0" text="Deletar" />
+      <Label layoutX="500.0" layoutY="72.0" text="Título" />
+      <TextField fx:id="txtTitulo" layoutX="500.0" layoutY="89.0" />
+      <Label layoutX="500.0" layoutY="121.0" text="Ano de lançamento" />
+      <Label layoutX="500.0" layoutY="170.0" text="Número de páginas" />
+      <TextField fx:id="txtNumeroPaginas" layoutX="500.0" layoutY="187.0" />
+      <TextField fx:id="txtAnoLancamento" layoutX="500.0" layoutY="138.0" />
+      <Label layoutX="500.0" layoutY="219.0" text="Idioma" />
+      <TextField fx:id="txtIdioma" layoutX="500.0" layoutY="236.0" />
+      <Label layoutX="500.0" layoutY="270.0" text="País de origem" />
+      <TextField fx:id="txtPaisOrigem" layoutX="500.0" layoutY="287.0" />
+      <Button fx:id="btnSalvar" layoutX="447.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#cliqueBotaoSalvar" prefHeight="45.0" prefWidth="104.0" text="Salvar" />
+      <Button fx:id="btnCancelar" layoutX="560.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#cliqueBotaoCancelar" prefHeight="45.0" prefWidth="114.0" text="Cancelar" />
+      <Label fx:id="lblId" layoutX="499.0" layoutY="42.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="500.0" layoutY="22.0" text="ID:" />
+   </children>
+</AnchorPane>
